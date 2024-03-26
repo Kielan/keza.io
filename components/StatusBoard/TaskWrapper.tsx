@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import TaskItem from './TaskItem.tsx'
 import { ITaskState } from './types.tsx'
 import Button, { 
-			 ButtonBackground,
-       ButtonBorder,
-			 ButtonModification } from './Button.tsx'
+	ButtonBackground,
+	ButtonBorder,
+	ButtonModification } from './Button.tsx'
 import IconOval from './Icons/Oval.tsx'
 
 const variables = {
@@ -59,7 +59,7 @@ const TasksWrapper = styled.div<DragWrapperProps>`
     #E3ECFB 10px
   )`
       : 'none'};
-		height: 38rem;
+	height: 38rem;
 `
 
 type DragWrapperProps = {
@@ -119,11 +119,11 @@ const TaskWrapper: React.FC<ITaskWrapperProps> = props => {
         <Tasks {...props} />
       </TasksWrapper>
       <Button
-				backgroundVariant={ButtonBackground.light}
-				borderVariant={ButtonBorder.topflat}
-				modification={ButtonModification.notext} 
-				disabled={true}
-			/>
+	backgroundVariant={ButtonBackground.light}
+	borderVariant={ButtonBorder.topflat}
+	modification={ButtonModification.notext} 
+	disabled={true}
+	/>
     </Wrapper>
   )
 }
