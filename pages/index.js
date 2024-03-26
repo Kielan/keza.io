@@ -12,9 +12,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-			<Provider store={store}>
-				<StatusBoard />
-			</Provider>
+	<Provider store={store}>
+		<StatusBoard />
+	</Provider>
     </div>
   )
 }
